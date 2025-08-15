@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Handles user input and basic format validation
+
 public class UserInputHandler {
     private Scanner scanner;
 
@@ -39,15 +39,15 @@ public class UserInputHandler {
             System.out.print(prompt);
             if (scanner.hasNextInt()) {
                 value = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
-                if (value > 0) { // Basic validation for age
+                scanner.nextLine(); 
+                if (value > 0) { 
                     break;
                 } else {
                     System.out.println("Invalid input. Please enter a positive integer.");
                 }
             } else {
                 System.out.println("Invalid input. Please enter a valid integer.");
-                scanner.nextLine(); // Clear invalid input
+                scanner.nextLine(); 
             }
         }
         return value;
@@ -59,8 +59,8 @@ public class UserInputHandler {
             System.out.print(prompt);
             if (scanner.hasNextDouble()) {
                 value = scanner.nextDouble();
-                scanner.nextLine(); // Consume newline
-                if (value > 0) { // Basic validation for weight/height
+                scanner.nextLine(); 
+                if (value > 0) { 
                      break;
                 } else {
                     System.out.println("Invalid input. Please enter a positive number.");

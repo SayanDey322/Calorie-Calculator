@@ -1,4 +1,3 @@
-// Responsible for displaying the calculation results
 
 public class ResultDisplay {
     public void displayResults(double bmr, double calorieNeeds) {

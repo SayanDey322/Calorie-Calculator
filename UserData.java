@@ -1,4 +1,3 @@
-// Data Transfer Object to hold user's information
 
 public class UserData {
     private String gender;
@@ -7,7 +6,7 @@ public class UserData {
     private double height;
     private String activityLevel;
 
-    // Constructor
+
     public UserData(String gender, int age, double weight, double height, String activityLevel) {
         this.gender = gender;
         this.age = age;
@@ -16,7 +15,7 @@ public class UserData {
         this.activityLevel = activityLevel;
     }
 
-    // Getters
+
     public String getGender() {
         return gender;
     }

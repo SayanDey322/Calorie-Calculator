@@ -1,8 +1,7 @@
-// Handles the business logic for calorie calculations
 
 public class CalorieCalculator {
     
-    // Constants for BMR formula coefficients and activity multipliers
+
     private static final double MALE_BMR_CONSTANT = 88.362;
     private static final double FEMALE_BMR_CONSTANT = 447.593;
     private static final double MALE_WEIGHT_COEFFICIENT = 13.397;
@@ -33,8 +32,7 @@ public class CalorieCalculator {
     }
 
     public double calculateDailyCalorieNeeds(double bmr, String activityLevel) {
-        // Domain validation for activityLevel could be here if not handled before
-        // For this example, assuming activityLevel is already validated
+
         double calorieNeeds;
         switch (activityLevel.toLowerCase()) {
             case "sedentary":
@@ -47,7 +45,6 @@ public class CalorieCalculator {
                 calorieNeeds = bmr * ACTIVE_MULTIPLIER;
                 break;
             default:
-                // This case should ideally not be reached if input is validated properly
                 throw new IllegalArgumentException("Invalid activity level: " + activityLevel);
         }
         return calorieNeeds;
